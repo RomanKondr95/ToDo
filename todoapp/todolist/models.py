@@ -2,7 +2,7 @@ from django.db import models
 
 class ToDo(models.Model):
     title = models.CharField('Название задания',max_length=500)
-    is_comleted = models.BooleanField('Завершено',default=False)
+    is_completed = models.BooleanField('Завершено',default=False)
 
     class Meta:
         verbose_name = 'Задание'
